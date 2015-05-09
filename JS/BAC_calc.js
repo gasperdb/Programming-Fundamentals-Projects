@@ -8,6 +8,10 @@ function checksAndProcess(age, weight, gender, amount, time) {
     alert("You're too damn skinny for this, go eat a burger!");
   } else if (gender === " ") {
     alert("Please tell us if you're male or female.");
+  } else if (amount > 10) {
+    alert("You've had too many drinks, you might want to consider getting help.");
+  } else if (amount < 0) {
+    alert("Nice try, put in an actual amount of drinks.");
   } else {
     answer = calculateBAC(weight, gender, amount, time);
     outputArea.innerHTML = answer;
