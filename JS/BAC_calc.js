@@ -92,21 +92,22 @@ function calculateBAC(weight, gender, amount, time) {
 
 function main(){
   var ageInput    = document.getElementById("ageInput");
-  var weightInput = document.getElementById("weightInput");
-  var genderInput = document.getElementById("genderInput");
   var amountInput = document.getElementById("amountInput");
-  var timeInput   = document.getElementById("timeInput");
+  var genderInput = document.getElementById("genderInput");
   var outputArea  = document.getElementById("outputArea");
-
+  var timeInput   = document.getElementById("timeInput");
+  var weightInput = document.getElementById("weightInput");
+  
   calculatorForm.addEventListener('submit', function(event) {
     event.preventDefault();
     
-    var answer;
+
     var age;
-    var weight;
-    var gender;
     var amount;
+    var answer;
+    var gender;
     var time;
+    var weight;
     
     age    = ageInput.value;
     weight = weightInput.value;
