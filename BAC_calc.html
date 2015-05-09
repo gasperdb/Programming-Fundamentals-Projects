@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Blood Alcohol Content Calculator - BAC Calc</title>
+    <link rel="stylesheet" href="./CSS/BAC_calc.css">
+    <!-- jquery
+    <script src="http://code.jquery.com/jquery-1.90.1.min.js"></script>
+    -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	
+  <h1>Blood Alcohol Content Calculator</h1>
+  <p>
+      This calculator will only give you a rough estimate.
+    If your BAC levels are under the legal limit, that does not mean you should
+    drive. If you have been drinking at all, you should get a ride from a friend.
+    Please do not risk your life or others' by drinking and driving.
+  </p>
+  
+	<form id="calculatorForm">
+    <ol>
+      <li>
+        <label for="ageInput">Age (years):</label>
+        <input id="ageInput" type="number" required>
+      </li>
+      
+      <li>
+        <label for="weightInput">Body weight (lbs):</label>
+        <input id="weightInput" type="number" required>
+      </li>
+      
+      <li>
+        <label for="genderInput">Sex (M/F):</label>
+        <select id="genderInput">
+          <option value=" "></option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </li>
+      
+      <li>
+        <label for="amountInput">Amount of drinks:</label>
+        <input id="amountInput" type="number" required>
+
+      </li>
+      
+      <li>
+        <a target="_blank" href="http://gordiecenter.studenthealth.virginia.edu/basics">
+          How much is a drink? Click here to find out.
+        </a>
+      </li>
+      
+      <li>
+        <label for="timeInput">Time since first drink (hours):</label>
+        <input id="timeInput" type="number" required>
+      </li>
+    </ol>
+    <input id="submitData" type="submit" value="Calculate">
+	</form>
+  
+  <p id="outputArea"></p>
+    <!-- javascript code -->
+    <script src="./JS/BAC_calc.js"></script>
+     
+  </body>
+</html>

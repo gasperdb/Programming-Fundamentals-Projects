@@ -1,0 +1,73 @@
+body {
+  font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;
+  font-size: 24px;
+  color: #FFF;
+  background-color: #000;
+}
+
+h1 {
+  font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
+  font-size: 48px;
+  text-align: center;
+  color: #B40404;
+}
+
+p {
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+ol > li {
+  padding-bottom: 15px;
+}
+
+form {
+  text-align: center;
+}
+
+ol > li > label {
+  padding-right: 10px;
+}
+
+input, select {
+  text-align: center;
+  width: 100px;
+  padding: 3px 0;
+  margin-right: 8px;
+  font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;
+  font-size: 18px;
+}
+
+#submitData {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ol > li > a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #B40404;
+}
+
+#outputArea {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+}
